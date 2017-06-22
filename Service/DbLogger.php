@@ -26,6 +26,12 @@ class DbLogger
         $dbLog->setMessage($message);
     }
 
+    public function addDebug($user, $message)
+    {
+        $dbLogType = $this->em->getRepository('GolpilolzDbLogBundle:DbLogType')->findOneById(5);
+        $this->addLog($dbLogType, $user, $message);
+    }
+
     public function addInfo($user, $message)
     {
         $dbLogType = $this->em->getRepository('GolpilolzDbLogBundle:DbLogType')->findOneById(3);
