@@ -1,0 +1,13 @@
+{
+    "name": "golpilolz/dblogbundle",
+    "description": "add custom logs in database",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arthur Haton",
+            "email": "arthur.haton@orange.fr"
+        }
+    ],
+    "require": {}
+}

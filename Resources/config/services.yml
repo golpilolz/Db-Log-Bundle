@@ -1,0 +1,5 @@
+services:
+#    golpilolz_db_log.example:
+#        class: Golpilolz\DbLogBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    golpilole_db_log.logger:

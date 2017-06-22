@@ -1,0 +1,3 @@
+golpilolz_db_log_homepage:
+    path:     /
+    defaults: { _controller: GolpilolzDbLogBundle:Default:index }
