@@ -1,6 +1,6 @@
 {
     "name": "golpilolz/dblogbundle",
-    "description": "add custom logs in database",
+    "description": "Add custom logs in database",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
@@ -9,5 +9,10 @@
             "email": "arthur.haton@orange.fr"
         }
     ],
-    "require": {}
+    "require": {},
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
 }

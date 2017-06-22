@@ -3,3 +3,6 @@ services:
 #        class: Golpilolz\DbLogBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]
     golpilole_db_log.logger:
+        class: Golpilolz\DbLogBundle\Service\DbLogger
+        arguments:
+            - "@doctrine.orm.entity_manager"
