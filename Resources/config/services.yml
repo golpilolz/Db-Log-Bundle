@@ -2,7 +2,12 @@ services:
 #    golpilolz_db_log.example:
 #        class: Golpilolz\DbLogBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]
-    golpilole_db_log.logger:
+    golpilolz_db_log.logger:
         class: Golpilolz\DbLogBundle\Service\DbLogger
+        arguments:
+            - "@doctrine.orm.entity_manager"
+
+    golpilolz_db_log.serialiser:
+        class: Golpilolz\DbLogBundle\Service\DBLoggerSerializer
         arguments:
             - "@doctrine.orm.entity_manager"

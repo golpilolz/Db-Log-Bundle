@@ -12,6 +12,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class DbLog
 {
+
+
     /**
      * @var int
      *
@@ -22,10 +24,12 @@ class DbLog
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Golpilolz\DbLogBundle\Entity\DbLogType")
-     * @ORM\JoinColumn(nullable=false)
+     * @var string
+     *
+     * @ORM\Column(name="level", type="integer")
      */
-    private $dbLogType;
+    private $level;
+
     /**
      * @var \DateTime
      *
@@ -59,20 +63,20 @@ class DbLog
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getDbLogType()
+    public function getLevel(): string
     {
-        return $this->dbLogType;
+        return $this->level;
     }
 
     /**
-     * @param mixed $dbLogType
+     * @param string $level
      * @return DbLog
      */
-    public function setDbLogType($dbLogType)
+    public function setLevel(string $level): DbLog
     {
-        $this->dbLogType = $dbLogType;
+        $this->level = $level;
         return $this;
     }
 
