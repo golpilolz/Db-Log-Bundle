@@ -65,7 +65,7 @@ class DbLog
     /**
      * @return string
      */
-    public function getLevel(): string
+    public function getLevel()
     {
         return $this->level;
     }
@@ -74,7 +74,7 @@ class DbLog
      * @param string $level
      * @return DbLog
      */
-    public function setLevel(string $level): DbLog
+    public function setLevel($level)
     {
         $this->level = $level;
         return $this;
